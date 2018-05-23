@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Saved TimeSheets</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="style/jquery-ui.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="jsCode/navigation.js"></script>
+    <script src="jsCode/savedTimesheets.js"></script>
+</head>
+<body>
+    <img src="images/laoder.gif" id="imgloader" />
+    <div id="divAdmin" class="topband clearfix">
+        <ul>
+            <li><a href="#" id="lnkNew">New</a></li>
+            <li><a href="#" id="lnkSaved" class="active">Saved</a></li>
+            <li><a href="#" id="lnkPending">Pending Approvals</a></li>
+            <li><a href="#" id="lnkDataEntry">Data Entry</a></li>
+        </ul>
+    </div>
+    <div class="contentWrapper">
+        <div class="viewEdit clearfix">
+            <span><strong>Saved TimeSheets  </strong></span>
+        </div>
+        <hr />
+    </div>
+    <div class="table-responsive">
+        <table id="tblresults" class="tblOffer" width="100%" cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <th width="5%"><input type="checkbox" id="chkAll" /> Select All</th>
+                <th width="14%">Week Range</th>
+                <th width="22%">Total Hours</th>
+                <th width="22%">User Name</th>
+                <th width="22%">Status</th>
+            </tr>
+        </table>
+    </div>
+    <div class="btnRowleft">
+        <input type="button" id="btnSubmit" value="Submit">
+    </div>
+
+
+
+    <script type="text/javascript">
+        getSavedTimesheets();
+    </script>
+</body>
+</html>

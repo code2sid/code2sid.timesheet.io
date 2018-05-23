@@ -1,0 +1,29 @@
+{"Users":[
+		{"Name":"sid","Password":"sid@123","RoleId":1},
+		{"Name":"rahul","Password":"rahul@123","RoleId":1},
+		{"Name":"ruchi","Password":"ruchi@123","RoleId":2}
+       ],
+"Projects":[
+			{"Name":"Data Integration"}
+		 ],
+"UserProjects":[
+				{"ProjectId":1,"UserId":1},
+				{"ProjectId":1,"UserId":2},
+				{"ProjectId":1,"UserId":3},
+				{"ProjectId":1,"UserId":4}
+			 ],
+"Tasks":[
+		{"Name":"Billable Task","TaskTypeId":1},
+		{"Name":"Leave","TaskTypeId":2},
+		{"Name":"Public Holiday","TaskTypeId":2}
+	  ],
+"ProjectTasks":[
+				{"ProjectId":1,"TaskId":1},
+				{"ProjectId":1,"TaskId":2},
+				{"ProjectId":1,"TaskId":3}
+			 ],
+"TaskTypes":[
+			{"Name":"Billable"},
+			{"Name":"Non-Billable"}
+   		  ]
+}

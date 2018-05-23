@@ -1,0 +1,16 @@
+﻿html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, font, img, dl, dt, dd, ol, ul, li, legend, table, tbody, tr, th, td { font-family: inherit; font-size: 100%; font-style: inherit; font-weight: inherit; list-style: none outside none; margin: 0; outline: 0 none; padding: 0; }
+a img { border: medium none; }
+
+.mainPage {
+    width:99%; margin: 0 auto;
+}
+
+#weekSelector { display: inline; height: 23px; margin: 0; padding: 0; }
+#weekSelector ul { float: right; margin: 0px 0 0; padding: 0; }
+#weekSelector li { display: inline; margin: 0; padding: 0; }
+
+a img { border: medium none;vertical-align:middle; }
+
+h3, #timesheet_top_panel{ background: #0066cb;   padding:10px;}
+#timesheet_top_panel h2 { color: #FFFFFF; font-size: 14px; line-height: 1em; text-align:center;  }
+
