@@ -6,6 +6,8 @@ var dates = [];
 var defaultValue = 8;
 $("#imgloader").hide();
 
+setWeek((new Date));
+getProjects();
 
 
 function onchange() {

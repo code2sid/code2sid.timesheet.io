@@ -1,10 +1,11 @@
 {"Users":[
 		{"Name":"sid","Password":"sid@123","RoleId":1},
 		{"Name":"rahul","Password":"rahul@123","RoleId":1},
-		{"Name":"ruchi","Password":"ruchi@123","RoleId":2}
+		{"Name":"ruchi","Password":"ruchi@123","RoleId":2},
+		{"Name":"sugi","Password":"sugi@123","RoleId":2}
        ],
 "Projects":[
-			{"Name":"Data Integration"}
+  { "Name": "Data Integration" }
 		 ],
 "UserProjects":[
 				{"ProjectId":1,"UserId":1},

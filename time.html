@@ -15,7 +15,6 @@
 
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="jsCode/navigation.js"></script>
     <script>
         $(function () {
             $(function () {
@@ -34,13 +33,17 @@
 </head>
 <body>
     <img src="images/laoder.gif" id="imgloader" />
-    <div id="divAdmin" class="topband clearfix">
+    <div id="divAdmin" class="topband clearfix" style="width:90%;float:left;">
         <ul>
             <li><a href="#" id="lnkNew" class="active">New</a></li>
-            <li><a href="#" id="lnkSaved">Saved &nbsp;<span></span></a></li>
-            <li><a href="#" id="lnkPending">Pending Approvals &nbsp;</a></li>
-            <!--<li><a href="#" id="lnkApproved">Approved</a></li>-->
-            <li><a href="#" id="lnkDataEntry" >Data Entry</a></li>
+            <li><a href="#" id="lnkSaved">Saved</a></li>
+            <li><a href="#" id="lnkPending">Pending Approvals</a></li>
+            <li><a href="#" id="lnkDataEntry">Data Entry</a></li>
+        </ul>
+    </div>
+    <div id="divAdmin" class="topband clearfix" style="width:10%;float:right;">
+        <ul>
+            <li><a href="#" id="lnkLogout" style="padding:7px 38px;">LogOut</a></li>
         </ul>
     </div>
 
@@ -116,10 +119,8 @@
         <input type="button" class="save" value="Save"><input type="button" value="Submit" id="btnSubmit">
     </div>
 
+    <script src="jsCode/navigation.js"></script>
     <script src="jsCode/mytimesheet.js"></script>
-    <script type="text/javascript">
-        setWeek((new Date));
-        getProjects();
-    </script>
+ 
 </body>
 </html>

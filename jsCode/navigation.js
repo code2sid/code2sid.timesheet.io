@@ -9,11 +9,10 @@ if (user.length > 0) {
 }
 
 $("#lnkPending").hide();
-$("#lnkSaved").hide();
+$("#lnkDataEntry").hide();
 if (user[2] == 1) {
     $("#lnkPending").show();
-    $("#lnkSaved").show();
-
+    $("#lnkDataEntry").show();
 }
 
 $("#imgloader").hide();
@@ -33,4 +32,8 @@ $(document).on('click', '#lnkPending', function () {
 
 $(document).on('click', '#lnkSaved', function () {
     window.location = "SavedTimesheet.html?user=" + userVal;
+});
+
+$(document).on('click', '#lnkLogout', function () {
+    window.location = "Login.html";
 });

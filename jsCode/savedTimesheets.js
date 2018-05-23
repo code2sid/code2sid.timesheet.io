@@ -1,28 +1,10 @@
 ﻿window.apiURL = 'http://localhost:50792/api/timesheet';
+getSavedTimesheets();
 function getSavedTimesheets() {
     $("#imgloader").show();
 
-
-    $.ajax({
-        type: "GET",
-        url: apiURL + "/GetSavedTimeSheets/",
-        contentType: 'application/json',
-        data: { isSubmitted: false, UserId: parseInt(user[1]) },
-        dataType: "json",
-        success: function (result) {
-            if (result) {
-                alert("TimeSheet(s) Submitted Successfully");
-                $(".removeRow").remove();
-            }
-        },
-        error: function (jqXHR, exception) {
-            alert("Could not reach the API: " + error);
-
-        }
-    });
-
      $.ajax(apiURL + "/GetSavedTimeSheets/", {
-        type: "GET",
+        type: "POST",
         data: JSON.stringify({ isSubmitted: false, UserId: parseInt(user[1]) }),
         contentType: "application/json",
     }).done(function (savedTimesheets) {

@@ -2,12 +2,15 @@
 function getPendingApprovals() {
     $("#imgloader").show();
 
-    var approvalURL = apiURL + "/GetPendingApprovals?from={0}&to={1}&includeApproved={2}";
-    approvalURL = approvalURL.replace("{0}", $("#txtFrom").val()).replace("{1}", $("#txtTo").val()).replace("{2}", $("#chkIncApproved").prop('checked'));
-
-    $.ajax(approvalURL, {
-        type: "GET",
+    $.ajax(apiURL + "/GetPendingApprovals", {
+        type: "POST",
         contentType: "application/json",
+        data: JSON.stringify({
+            From: $("#txtFrom").val(),
+            To: $("#txtTo").val(),
+            UserId: parseInt(user[1]),
+            IncludeApproved: $("#chkIncApproved").prop('checked')
+        }),
     }).done(function (pendingApprovals) {
         $(".removeRow").remove();
         var counter = 1;

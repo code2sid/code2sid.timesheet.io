@@ -8,19 +8,21 @@
 
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="jsCode/DataEntites.js"></script>
-    <script src="jsCode/navigation.js"></script>
 
 </head>
 <body>
     <img src="images/laoder.gif" id="imgloader" />
-    <div id="divAdmin" class="topband clearfix">
-        <input type="hidden" id="navValues" />
+    <div id="divAdmin" class="topband clearfix" style="width:90%;float:left;">
         <ul>
             <li><a href="#" id="lnkNew">New</a></li>
-            <li><a href="#" id="lnkSaved">Saved &nbsp;<span></span></a></li>
-            <li><a href="#" id="lnkPending">Pending Approvals &nbsp;</a></li>
+            <li><a href="#" id="lnkSaved">Saved</a></li>
+            <li><a href="#" id="lnkPending">Pending Approvals</a></li>
             <li><a href="#" id="lnkDataEntry" class="active">Data Entry</a></li>
+        </ul>
+    </div>
+    <div id="divAdmin" class="topband clearfix" style="width:10%;float:right;">
+        <ul>
+            <li><a href="#" id="lnkLogout" style="padding:7px 38px;">LogOut</a></li>
         </ul>
     </div>
     <div class="btnRowleft">
@@ -75,6 +77,16 @@
             </div>
             <br />
             <div style="float: left; width: 50%;">
+                Task Types:
+                <table id="tblTaskTypes" class="tblOffer" width="90%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <th width="4%">Id</th>
+                        <th width="32%">Name</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="float: left; width: 50%;">
                 Project Tasks:
                 <table id="tblProjectTasks" class="tblOffer" width="90%" cellpadding="0" cellspacing="0" border="0">
                     <tr>
@@ -86,19 +98,11 @@
             </div>
 
 
-            <div style="float: left; width: 50%;">
-                Task Types:
-                <table id="tblTaskTypes" class="tblOffer" width="90%" cellpadding="0" cellspacing="0" border="0">
-                    <tr>
-                        <th width="4%">Id</th>
-                        <th width="32%">Name</th>
-                    </tr>
-                </table>
-            </div>
+
         </div>
     </div>
-    <script type="text/javascript">
-        $("#imgloader").hide();
-    </script>
+   
+    <script src="jsCode/navigation.js"></script>
+    <script src="jsCode/DataEntites.js"></script>
 </body>
 </html>

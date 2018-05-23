@@ -14,17 +14,20 @@
 
     <script src="js/jquery-1.12.4.js"></script>
     <script src="js/jquery-ui.js"></script>
-    <script src="jsCode/navigation.js"></script>
-    <script src="jsCode/savedTimesheets.js"></script>
 </head>
 <body>
     <img src="images/laoder.gif" id="imgloader" />
-    <div id="divAdmin" class="topband clearfix">
+    <div id="divAdmin" class="topband clearfix" style="width:90%;float:left;">
         <ul>
             <li><a href="#" id="lnkNew">New</a></li>
             <li><a href="#" id="lnkSaved" class="active">Saved</a></li>
             <li><a href="#" id="lnkPending">Pending Approvals</a></li>
             <li><a href="#" id="lnkDataEntry">Data Entry</a></li>
+        </ul>
+    </div>
+    <div id="divAdmin" class="topband clearfix" style="width:10%;float:right;">
+        <ul>
+            <li><a href="#" id="lnkLogout" style="padding:7px 38px;">LogOut</a></li>
         </ul>
     </div>
     <div class="contentWrapper">
@@ -49,9 +52,7 @@
     </div>
 
 
-
-    <script type="text/javascript">
-        getSavedTimesheets();
-    </script>
-</body>
+    <script src="jsCode/navigation.js"></script>
+    <script src="jsCode/savedTimesheets.js"></script>
+  </body>
 </html>

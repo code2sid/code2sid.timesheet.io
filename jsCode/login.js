@@ -15,7 +15,7 @@ $(document).on('click', '#login', function () {
 
         else {
             var mydata = btoa(user.Name) + "~0/" + btoa(user.Id) + "~0/" + btoa(user.RoleId) + "~0/" + btoa((new Date()).getDate() + (new Date()).getTime());
-            window.location = "/time/time.html?user=" + mydata;
+            window.location = "/time.html?user=" + mydata;
         }
 
     }).fail(function (xhr, status, error) {
